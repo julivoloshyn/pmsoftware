@@ -15,7 +15,6 @@ public class AuthorisationServiceImpl  implements AuthorisationService {
 
     @Autowired
     UserRepository userRepository;
-    @Autowired
     PasswordEncoder passwordEncoder;
     @Override
     public void register(UserDTO user) throws UserAlreadyExistsException {
