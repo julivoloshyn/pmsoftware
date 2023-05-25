@@ -18,6 +18,7 @@ import java.util.List;
 @RestController
 @RequestMapping("/users")
 public class UserController {
+
     private final UserServiceImpl userService;
 
     public UserController(UserServiceImpl userService) {
@@ -50,6 +51,4 @@ public class UserController {
     public ResponseEntity<UserDTO> updateUser(@RequestBody UserDTO user){
         return ResponseEntity.ok(userService.updateUser(user));
     }
-
-
 }
