@@ -2,15 +2,12 @@ package com.diploma.pmsoftware;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.boot.autoconfigure.domain.EntityScan;
-import org.springframework.context.annotation.ComponentScan;
+import org.springframework.context.annotation.Configuration;
 
-@EntityScan("com.diploma.pmsoftware.*")
+@Configuration
 @SpringBootApplication
 public class PMSoftwareApplication {
-
 	public static void main(String[] args) {
 		SpringApplication.run(PMSoftwareApplication.class, args);
 	}
-
 }

@@ -15,6 +15,7 @@ import java.util.stream.Collectors;
 public class UserServiceImpl implements UserService {
     UserRepository userRepository;
     ModelMapper mapper = new ModelMapper();
+
     public UserServiceImpl(UserRepository userRepository) {
         this.userRepository = userRepository;
     }
